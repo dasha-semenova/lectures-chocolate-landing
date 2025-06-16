@@ -1,0 +1,30 @@
+* {
+    font-family: "Montserrat", Helvetica;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.header-navigation-logo {
+    font-weight: 700;
+    letter-spacing: -0.10px;
+    line-height: 20px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 18px;  
+    text-transform: uppercase;  
+}
+
+.header-navigation-logo-italic {  
+    font-style: italic;
+}
+
+.hero-banner {
+    background-image: url(/images/hero-banner.jpg);
+    width: 1136px;
+    height: 600px;
+    background-size: contain;
+    border-radius: 30px;
+}
