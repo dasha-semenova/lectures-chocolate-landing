@@ -1,25 +1,102 @@
 * {
     font-family: "Montserrat", Helvetica;
-    list-style-type: none;
 }
 
+ul, li {
+    list-style-type: none;
+}
 a {
     text-decoration: none;
     color: #111111;
 }
+
+.recipe-subtitle, 
+.recipe-subtitle-list-item-text,
+.review-list-item-title,
+.review-button,
+.darkgray-text {
+    color: #111111;
+}
+
+
+.bottom-title,
+.hero-banner-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 121%;
+}
+
+.bottom-contacts-address-list-item-number,
+.bottom-contacts-address-list-item-mail,
+.bottom-contacts-title,
+.bottom-title,
+.bottom-navigation-list-item-anchor,
+.bottom-contacts-address-list-item,
+.white-text,
+.benefits-title,
+.hero-banner-title,
+.hero-banner-button-scroll,
+.button-secondary,
+.button-primery {
+    color: #fff;
+}
+
+.button-primery:hover,
+.button-primery:focus,
+.button-secondary:hover,
+.button-secondary:focus,
+.text-higlight {
+    color: #FD9222;
+}
+
+.button-primery:active {}
+
+.button {
+    cursor: pointer;
+}
+
+.button-primery {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #FD9222;
+}
+
+.button-primery:hover,
+.button-primery:focus {
+    background-color: #FCF1E0;
+}
+
+.button-secondary {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ________________________________
+Navigation section */
+
+
 
 .header-navigation-logo {
     font-weight: 700;
     letter-spacing: -0.10px;
     line-height: 20px;
     font-family: "Montserrat-Bold", Helvetica;
-    font-size: 18px;  
-    text-transform: uppercase;  
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
-.header-navigation-logo-italic {  
+.header-navigation-logo-italic {
     font-style: italic;
 }
+
+.header {}
+
+.header-navigation {}
+
+.first-logo {}
+
+/* ________________________________
+Hero section*/
 
 .hero-banner {
     background-image: url(/images/hero-banner.jpg);
@@ -28,3 +105,193 @@ a {
     background-size: contain;
     border-radius: 30px;
 }
+
+.hero-banner-title {
+    letter-spacing: -0.03em;
+}
+
+.hero-banner-button-scroll-image {}
+
+/* ________________________________
+Benefits section*/
+
+.benefits {
+    background-color: #1E1823;
+}
+
+.benefits-list {}
+
+.benefits-list-item {}
+
+.benefits-list-item-image{}
+
+.benefits-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.benefits-list-item-text {
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ________________________________
+Taste section*/
+
+.taste {}
+
+.taste-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.taste-subtitle {
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.taste-list {}
+
+.taste-list-item {}
+
+.taste-list-item-image {}
+
+.taste-list-item-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.list-item-milk {
+    background-color: #FD9222;
+}
+
+.list-item-nut {
+    background-color: #1E1823;
+}
+
+/* ________________________________
+How it’s made?/recipe section*/
+
+.recipe {}
+
+.recipe-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.recipe-image {}
+
+.recipe-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+}
+
+.recipe-subtitle-list {}
+
+.recipe-subtitle-list-item {}
+
+.recipe-subtitle-list-item-text {
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+/* ________________________________
+Review section*/
+
+.review {}
+
+.recipe-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.review-list {}
+
+.review-list-item {
+    background-color: #fff;
+}
+
+.review-list-item-image {}
+
+.review-list-item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    text-align: center;
+}
+
+.review-list-item-subtitle {
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button-secondary {}
+
+/* ________________________________
+Footer section*/
+
+.bottom {
+    background-color: #1E1823;
+}
+
+.bottom-title {
+    letter-spacing: -0.02em;
+}
+
+.bottom-contacts {}
+
+.bottom-contacts-title{
+    font-weight: 500;
+    line-height: 1.28571;
+}
+
+.bottom-contacts-address {}
+
+.bottom-contacts-address-list {}
+
+.bottom-contacts-address-list-item {
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+.bottom-contacts-address-list-item-number {}
+
+.bottom-contacts-address-list-item-mail {}
+
+.bottom-navigation {}
+
+.bottom-navigation-list {}
+
+.bottom-navigation-list-item {}
+
+.bottom-navigation-list-item-anchor {
+    font-weight: 500;
+    line-height: 1.14286;
+    letter-spacing: -0.02em;
+}
+
+.bottom-subcribe {}
+
+.bottom-subcribe-email {}
+
+.bottom-subcribe-submit {}
