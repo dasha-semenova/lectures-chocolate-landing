@@ -2,14 +2,35 @@
     font-family: "Montserrat", Helvetica;
 }
 
+h1, h2, h3, h4, h5, h6, div, p, a {
+    padding: 0;
+    margin: 0;
+    /* на лекции установили только верх/низ
+    margin-top: 0;
+    margin-bottom: 0; */
+}
+
 ul, li {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+
 a {
     text-decoration: none;
     color: #111111;
+    
 }
 
+address {
+    font-style: normal;
+}
+
+.container {
+    width: 1136px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
 .recipe-subtitle, 
 .recipe-subtitle-list-item-text,
 .review-list-item-title,
@@ -18,12 +39,23 @@ a {
     color: #111111;
 }
 
-
 .bottom-title,
 .hero-banner-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 121%;
+    letter-spacing: -0.02em;
+}
+
+.recipe-title,
+.review-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .bottom-contacts-address-list-item-number,
@@ -49,39 +81,45 @@ a {
     color: #FD9222;
 }
 
-.button-primery:active {}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    border: #FD9222 solid 1px;
+}
 
 .button {
     cursor: pointer;
-}
-
-.button-primery {
-    font-weight: 600;
-    font-size: 14px;
-    background-color: #FD9222;
-}
-
-.button-primery:hover,
-.button-primery:focus {
-    background-color: #FCF1E0;
-}
-
-.button-secondary {
-    font-weight: 600;
-    font-size: 14px;
 }
 
 /* ________________________________
 Navigation section */
 
 
+.header {
+    margin: 24px 0 32px 0;
+}
+
+.header-navigation {}
+
+.header-navigation-direction {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation-direction ul {
+    display: flex;
+}
 
 .header-navigation-logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     font-weight: 700;
     letter-spacing: -0.10px;
     line-height: 20px;
     font-family: "Montserrat-Bold", Helvetica;
     font-size: 18px;
+    flex-grow: 1;
     text-transform: uppercase;
 }
 
@@ -89,25 +127,90 @@ Navigation section */
     font-style: italic;
 }
 
-.header {}
+.header-navigation-menu {
+    gap: 24px;
+    font-weight: 500;
+    margin-right: 90px;
+}
 
-.header-navigation {}
-
-.first-logo {}
-
+.header-navigation-social {
+    gap: 18px;
+}
 /* ________________________________
 Hero section*/
 
 .hero-banner {
     background-image: url(/images/hero-banner.jpg);
-    width: 1136px;
-    height: 600px;
+    width: 100%;
     background-size: contain;
     border-radius: 30px;
+    margin-bottom: 72px;
+}
+
+.hero-banner-contant {
+    padding: 381px 40px 40px 40px;
 }
 
 .hero-banner-title {
-    letter-spacing: -0.03em;
+    max-width: 490px;
+    margin-bottom: 32px;
+}
+
+.hero-banner-contant-buttons {
+    display: flex;
+    align-content: center;
+}
+
+.hero-banner-contant-buttons div {
+    display: flex;
+    flex-grow: 1;
+    gap: 14px;
+}
+
+.button-primery,
+.review-button:hover,
+.review-button:focus {
+    border: none;
+    background-color: #FD9222;
+    color: #fff;
+}
+
+.button-primery:hover,
+.button-primery:focus {
+    background-color: #FCF1E0;
+}
+
+.button-primery:active {}
+
+.button-secondary {
+    font-weight: 600;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+    border: #fff solid 1px;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {}
+
+.button-secondary:active {}
+
+.button-primery,
+.button-secondary {
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 14px 40px;
+}
+
+.hero-banner-button-scroll {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+..hero-banner-button-scroll span {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .hero-banner-button-scroll-image {}
@@ -117,17 +220,31 @@ Benefits section*/
 
 .benefits {
     background-color: #1E1823;
+    margin-bottom: 100px;
+}
+.benefits .container {
+    flex-basis: calc((100% - 2 * 88px) / 3);
 }
 
-.benefits-list {}
+.benefits-list {
+    display: flex;
+    gap: 88px;
+    padding: 50px;
+}
 
 .benefits-list-item {}
 
-.benefits-list-item-image{}
+.benefits-list-item-image{
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    border-radius: 365px;
+    padding: 15px;
+}
 
 .benefits-title {
     font-weight: 600;
     font-size: 18px;
+    padding-bottom: 18px;
+    padding-top: 22px;
 }
 
 .benefits-list-item-text {
@@ -138,7 +255,15 @@ Benefits section*/
 /* ________________________________
 Taste section*/
 
-.taste {}
+.taste {
+    margin-bottom: 100px;
+}
+
+.taste-title,
+.taste-subtitle {
+    margin: 0 auto;
+    text-align: center;
+}
 
 .taste-title {
     font-weight: 600;
@@ -146,19 +271,29 @@ Taste section*/
     line-height: 1.16667;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    text-align: center;
+    max-width: 411px;
+    margin-bottom: 28px;
 }
 
 .taste-subtitle {
     font-size: 14px;
     line-height: 1.28571;
     letter-spacing: -0.02em;
-    text-align: center;
+    max-width: 486px;
+    margin-bottom: 50px;
 }
 
-.taste-list {}
+.taste-list {
+    display: flex;
+    gap: 18px;
+}
 
-.taste-list-item {}
+.taste-list-item {
+    border: 1px solid #FD9222;
+    border-radius: 15px;
+    padding: 28px 36px 28px 28px;
+    box-sizing: border-box;
+}
 
 .taste-list-item-image {}
 
@@ -168,6 +303,7 @@ Taste section*/
     line-height: 1.28571;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin-top: 36px;
 }
 
 .list-item-milk {
@@ -181,88 +317,122 @@ Taste section*/
 /* ________________________________
 How it’s made?/recipe section*/
 
-.recipe {}
-
-.recipe-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16667;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-align: center;
+.recipe {
+    margin-bottom: 100px;
 }
 
-.recipe-image {}
+.recipe-contant {
+    display: flex;
+    gap: 20px;
+}
+
+.recipe-contant section {
+    padding: 32px;
+}
+.recipe-image {
+    border-radius: 15px;
+}
 
 .recipe-subtitle {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33333;
+    margin-bottom: 28px;
 }
 
-.recipe-subtitle-list {}
+.recipe-subtitle-list {
+}
 
-.recipe-subtitle-list-item {}
+.recipe-subtitle-list-item {
+    margin-bottom: 24px;
+}
+
+.recipe-subtitle-list-item:last-child {
+    margin-bottom: 0;
+}
 
 .recipe-subtitle-list-item-text {
     line-height: 1.28571;
     letter-spacing: -0.02em;
+    font-size: 14px;
 }
 
 /* ________________________________
 Review section*/
 
-.review {}
-
-.recipe-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.16667;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+.review {
+    margin-bottom: 100px;
     text-align: center;
 }
 
-.review-list {}
+.review-list {
+    display: flex;
+    gap: 28px;
+}
 
 .review-list-item {
     background-color: #fff;
+    text-align: center;
+    padding: 0 24px 24px 24px;
+    flex-basis: calc((100% - 2 * 28px) / 3);
+    border: rgba(17, 17, 17, 0.1) solid 1px;
+    border-radius: 15px;
+    margin-bottom: 50px;
 }
 
-.review-list-item-image {}
+.review-list-item-image {
+    margin-bottom: 18px;
+    width: 80px;
+    height: 80px;
+}
 
 .review-list-item-title {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33333;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .review-list-item-subtitle {
     line-height: 1.28571;
     letter-spacing: -0.02em;
+    font-size: 14px;
     text-align: center;
     color: rgba(17, 17, 17, 0.7);
 }
 
-.review-button-secondary {}
+.review-button {
+    color: #111111;
+    border: #FD9222 solid 1px;
+}
 
 /* ________________________________
 Footer section*/
 
 .bottom {
     background-color: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bottom-upper-contant {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .bottom-title {
-    letter-spacing: -0.02em;
 }
 
-.bottom-contacts {}
+.bottom-contacts {
+    font-size: 14px;
+}
 
 .bottom-contacts-title{
     font-weight: 500;
     line-height: 1.28571;
+    margin-bottom: 14px;
 }
 
 .bottom-contacts-address {}
@@ -280,7 +450,15 @@ Footer section*/
 
 .bottom-navigation {}
 
-.bottom-navigation-list {}
+.bottom-menu-below {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.bottom-navigation-list {
+    display: flex;
+    gap: 24px;
+}
 
 .bottom-navigation-list-item {}
 
@@ -290,7 +468,10 @@ Footer section*/
     letter-spacing: -0.02em;
 }
 
-.bottom-subcribe {}
+.bottom-subcribe {
+    display: flex;
+    gap: 8px;
+}
 
 .bottom-subcribe-email {}
 
