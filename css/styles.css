@@ -140,7 +140,8 @@ Navigation section */
 Hero section*/
 
 .hero-banner {
-    background-image: url(/images/hero-banner.jpg);
+    /* background-image: url(/images/hero-banner.jpg); */
+    background-image: url("lectures-chocolate-landing/images/hero-banner.jpg");
     width: 100%;
     background-size: contain;
     border-radius: 30px;
