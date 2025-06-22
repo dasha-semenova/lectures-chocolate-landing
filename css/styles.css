@@ -96,7 +96,7 @@ Navigation section */
 
 
 .header {
-    margin: 24px 0 32px 0;
+    padding: 24px 0 32px 0;
 }
 
 .header-navigation {}
@@ -140,8 +140,7 @@ Navigation section */
 Hero section*/
 
 .hero-banner {
-    /* background-image: url(/images/hero-banner.jpg); */
-    background-image: url("lectures-chocolate-landing/images/hero-banner.jpg");
+    background-image: url("../images/hero-banner.jpg");
     width: 100%;
     background-size: contain;
     border-radius: 30px;
@@ -221,7 +220,6 @@ Benefits section*/
 
 .benefits {
     background-color: #1E1823;
-    margin-bottom: 100px;
 }
 .benefits .container {
     flex-basis: calc((100% - 2 * 88px) / 3);
@@ -257,7 +255,7 @@ Benefits section*/
 Taste section*/
 
 .taste {
-    margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 .taste-title,
@@ -290,10 +288,14 @@ Taste section*/
 }
 
 .taste-list-item {
-    border: 1px solid #FD9222;
+
     border-radius: 15px;
     padding: 28px 36px 28px 28px;
     box-sizing: border-box;
+}
+
+.taste-list-item:nth-child(even) {
+    border: 1px solid #FD9222;
 }
 
 .taste-list-item-image {}
@@ -319,7 +321,7 @@ Taste section*/
 How it’s made?/recipe section*/
 
 .recipe {
-    margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 .recipe-contant {
@@ -364,6 +366,7 @@ Review section*/
 .review {
     margin-bottom: 100px;
     text-align: center;
+    padding-top: 100px;
 }
 
 .review-list {
@@ -413,14 +416,12 @@ Footer section*/
 
 .bottom {
     background-color: #1E1823;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .bottom-upper-contant {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    padding: 50px 0 50px 0;
 }
 
 .bottom-title {
@@ -454,7 +455,7 @@ Footer section*/
 .bottom-menu-below {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    padding: 24px 0 50px 0;
 }
 .bottom-navigation-list {
     display: flex;
